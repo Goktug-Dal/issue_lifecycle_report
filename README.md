@@ -1,5 +1,11 @@
-Note: When you download this folder DO NOT FORGET to delete '-main' part of it.
-Not: Klasörü indirdikten sonra ismindeki '-main' i silmeyi UNUTMAYIN.
+Note: When you download this folder DO NOT FORGET to delete '-main' part of it. The folder name MUST be 'issue_lifecycle_report'.
+Note 2: The plugin will be disabled by default. Remember to activate it in Settings > Modules to confirm.
+Note 3: Remember to approve the new project creation.
+----
+Not: Klasörü indirdikten sonra ismindeki '-main' i silmeyi UNUTMAYIN. Klasör adı 'issue_lifecycle_report' olmalı.
+Not2: Plugin kapalı olarak gelecektir onaylamak için Ayarlar > Modüllerden aktif etmeyi unutmayın.
+Not3: Yeni proje oluştururken etkinleştirmeyi unutmayın.
+----
 
 
 
