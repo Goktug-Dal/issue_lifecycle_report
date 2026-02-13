@@ -8,6 +8,8 @@ Not: Klasörü indirdikten sonra ismindeki '-main' i silmeyi UNUTMAYIN. Klasör 
 Not2: Plugin kapalı olarak gelecektir onaylamak için Ayarlar > Modüllerden aktif etmeyi unutmayın.
 Not3: Yeni proje oluştururken etkinleştirmeyi unutmayın.
 
+----
+
 
 
 
