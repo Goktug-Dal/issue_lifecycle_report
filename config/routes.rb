@@ -1,0 +1,1 @@
+get 'projects/:project_id/lifecycle_report', :to => 'lifecycle_report#index'

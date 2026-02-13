@@ -1,0 +1,56 @@
+<div class="contextual">
+  <%= link_to 'Süreye Göre Sırala', {:sort => 'total_time'}, :class => 'icon icon-stats' %> |
+  <%= link_to 'Kullanıcıya Göre Sırala', {:sort => 'user'}, :class => 'icon icon-user' %>
+</div>
+
+<h2>İş Döngüsü Raporu: <%= @project.name %></h2>
+
+<div>
+  <table class= "list issues">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>İş No</th>
+        <th>Kategori</th>
+        <th>Konu</th>
+        <th>Mevcut Durum</th>
+        <th>Durum Geçmişi (Saat)</th>
+        <th>Toplam Süre</th>
+        <th>Yazar</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% if @report_data.present? %>
+        <% @report_data.each do |data| %>
+          <tr class="<%= cycle('odd', 'even') %> issue">
+            <td><%= link_to data[:issue].id, issue_path(data[:issue]) %></td>
+            <td>#<%= data[:issue].id %></td>
+
+            <% if data[:issue].category %>
+              <td> <%= data[:issue].category.name %> </td>
+            <% else %>
+              <td> - </td>
+            <% end %>
+
+            <td><%= link_to data[:issue].subject, issue_path(data[:issue]) %></td>
+            <td><%= data[:issue].status.name %></td>
+            <td>
+              <% data[:durations].each do |status_name, hours| %>
+                <p><%= status_name %>:<%= hours.round(2) %></p>
+              <% end %>
+            </td>
+
+            <td><%= data[:total_time].round(2) %> sa</td>
+            <td><%= data[:issue].author.name %></td>
+          </tr>
+        <% end %>
+      <% else %>
+        <tr>
+          <td colspan="8">Veri bulunamadı.</td>
+        </tr>
+      <% end %>
+    </tbody>
+
+  </table>
+</div>
