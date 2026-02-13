@@ -1,3 +1,8 @@
+Note: When you download this folder DO NOT FORGET to delete '-main' part of it.
+Not: Klasörü indirdikten sonra ismindeki '-main' i silmeyi UNUTMAYIN.
+
+
+
 TR:
     Özet:
         1- Bu plugin Redmine'daki işlerin sürelerini, kimin oluşturduğunu vb. özelliklerini takip eder.
